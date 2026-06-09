@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bv2x2cvs1cfp5"]
+[gd_scene load_steps=5 format=3 uid="uid://bv2x2cvs1cfp5"]
 
 [ext_resource type="Material" uid="uid://dfc4nlamyqe3x" path="res://wall_material.tres" id="1_0f027"]
 [ext_resource type="Texture2D" uid="uid://gdj7kkg1l5xn" path="res://background.png" id="2_2c62f"]
@@ -11,39 +11,39 @@ size = Vector3(0.02, 1, 1)
 material = ExtResource("1_0f027")
 size = Vector3(1, 0.02, 1)
 
-[node name="Node3D" type="Node3D" unique_id=1246351920]
+[node name="Node3D" type="Node3D"]
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1023059457]
+[node name="Camera3D" type="Camera3D" parent="."]
 fov = 62.3
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=607691012]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.455663, 0, -0.593574)
 mesh = SubResource("BoxMesh_2c62f")
 
-[node name="Top" type="MeshInstance3D" parent="." unique_id=1686277312]
+[node name="Top" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4924, -0.586622)
 mesh = SubResource("BoxMesh_gyfs4")
 
-[node name="Bottom" type="MeshInstance3D" parent="." unique_id=2011959199]
+[node name="Bottom" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.492, -0.587)
 mesh = SubResource("BoxMesh_gyfs4")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1875514117]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.451622, -4.76837e-07, -0.593275)
 mesh = SubResource("BoxMesh_2c62f")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1054270614]
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.252, 0, 2.364)
 light_color = Color(1, 0.9625, 0.75, 1)
 light_energy = 10.0
 spot_angle = 16.2244
 
-[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1875969850]
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.252394, 0, 2.36369)
 light_color = Color(1, 0.9625, 0.75, 1)
 light_energy = 10.0
 spot_angle = 16.2244
 
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=710555304]
+[node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.30373)
 texture = ExtResource("2_2c62f")
