@@ -2,6 +2,7 @@
 
 [ext_resource type="Material" uid="uid://dfc4nlamyqe3x" path="res://wall_material.tres" id="1_0f027"]
 [ext_resource type="Texture2D" uid="uid://gdj7kkg1l5xn" path="res://background.png" id="2_2c62f"]
+[ext_resource type="PackedScene" uid="uid://d1mccvy6reoat" path="res://desk.glb" id="3_gyfs4"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_2c62f"]
 material = ExtResource("1_0f027")
@@ -14,6 +15,7 @@ size = Vector3(1, 0.02, 1)
 [node name="Node3D" type="Node3D" unique_id=1246351920]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1023059457]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.35070056)
 fov = 62.3
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=607691012]
@@ -47,3 +49,6 @@ spot_angle = 16.2244
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=710555304]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.30373)
 texture = ExtResource("2_2c62f")
+
+[node name="desk" parent="." unique_id=555175987 instance=ExtResource("3_gyfs4")]
+transform = Transform3D(-2.1855695e-09, 0, -0.05, 0, 0.05, 0, 0.05, 0, -2.1855695e-09, 0.10490847, -0.47935373, 0.07537767)
