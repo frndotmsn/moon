@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://clk3lng4p8b0e"]
+
+[ext_resource type="Texture2D" uid="uid://dk6gnbh60hmt0" path="res://icon.svg" id="1_fyqef"]
+
+[node name="Control" type="Control" unique_id=2041441326]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="." unique_id=502364310]
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 960.0
+color = Color(9.1448425e-07, 0.4613682, 0.43664378, 1)
+
+[node name="Boden" type="ColorRect" parent="." unique_id=1754460543]
+layout_mode = 0
+offset_top = 758.0
+offset_right = 1024.0
+offset_bottom = 960.0
+color = Color(0.27787757, 0.112073116, 4.813075e-08, 1)
+
+[node name="Fenster Rechts" type="ColorRect" parent="." unique_id=717423167]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 435.0
+offset_right = 1021.0
+offset_bottom = 554.0
+color = Color(0.27787757, 0.112073116, 4.813075e-08, 1)
+
+[node name="Fenster Links" type="ColorRect" parent="." unique_id=1084158581]
+layout_mode = 0
+offset_top = 434.0
+offset_right = 121.0
+offset_bottom = 553.0
+color = Color(0.27787757, 0.112073116, 4.813075e-08, 1)
+
+[node name="Fensterrahmen Mitte" type="ColorRect" parent="." unique_id=473806100]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 40.0
+offset_right = 813.0
+offset_bottom = 545.0
+color = Color(0.21518216, 0.21518219, 0.21518219, 1)
+
+[node name="Fenster Mitte" type="ColorRect" parent="." unique_id=384080090]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 60.0
+offset_right = 792.0
+offset_bottom = 523.0
+color = Color(0, 0, 0, 1)
+
+[node name="Mond" type="Sprite2D" parent="." unique_id=1540017527]
+position = Vector2(517.5, 387.76563)
+scale = Vector2(4.320312, 2.1057124)
+texture = ExtResource("1_fyqef")
+
+[node name="Sterne" type="Control" parent="." unique_id=1171427159]
+anchors_preset = 0
+offset_left = 242.0
+offset_top = 60.0
+offset_right = 282.0
+offset_bottom = 100.0
+
+[node name="Stern 1" type="ColorRect" parent="Sterne" unique_id=1461821371]
+layout_mode = 0
+offset_left = 478.0
+offset_top = 77.0
+offset_right = 494.0
+offset_bottom = 94.0
+
+[node name="Stern 2" type="ColorRect" parent="Sterne" unique_id=1441216683]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 40.0
+offset_right = 278.0
+offset_bottom = 57.0
+
+[node name="Stern 3" type="ColorRect" parent="Sterne" unique_id=1145968475]
+layout_mode = 0
+offset_left = 351.0
+offset_top = 114.0
+offset_right = 367.0
+offset_bottom = 131.0
+
+[node name="Stern 4" type="ColorRect" parent="Sterne" unique_id=276579900]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 123.0
+offset_right = 120.0
+offset_bottom = 140.0
+
+[node name="Stern 5" type="ColorRect" parent="Sterne" unique_id=1401170929]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 45.0
+offset_right = 91.0
+offset_bottom = 62.0
+
+[node name="Stern 6" type="ColorRect" parent="Sterne" unique_id=1855920379]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 136.0
+offset_right = 445.0
+offset_bottom = 153.0
+
+[node name="Stern 7" type="ColorRect" parent="Sterne" unique_id=1584429403]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 106.0
+offset_right = 209.0
+offset_bottom = 123.0
+
+[node name="Stern 8" type="ColorRect" parent="Sterne" unique_id=1387957659]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 25.0
+offset_right = 436.0
+offset_bottom = 42.0
+
+[node name="Stern 9" type="ColorRect" parent="Sterne" unique_id=959788236]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 148.0
+offset_right = 300.0
+offset_bottom = 165.0
+
+[node name="Tisch Bein Links" type="ColorRect" parent="." unique_id=1679205727]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 668.0
+offset_right = 326.0
+offset_bottom = 864.0
+color = Color(0.68004686, 0.31695387, 2.8878452e-07, 1)
+
+[node name="Tisch Bein Rechts" type="ColorRect" parent="." unique_id=269036511]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 670.0
+offset_right = 792.0
+offset_bottom = 866.0
+color = Color(0.68004686, 0.31695387, 2.8878452e-07, 1)
+
+[node name="Tisch" type="ColorRect" parent="." unique_id=1463962363]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 538.0
+offset_right = 801.0
+offset_bottom = 734.0
+color = Color(0.94116783, 0.44908828, 0, 1)

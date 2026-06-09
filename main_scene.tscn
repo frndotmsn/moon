@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://bv2x2cvs1cfp5"]
 
 [ext_resource type="Material" uid="uid://dfc4nlamyqe3x" path="res://wall_material.tres" id="1_0f027"]
-[ext_resource type="Texture2D" uid="uid://gdj7kkg1l5xn" path="res://background.png" id="2_2c62f"]
+[ext_resource type="Texture2D" uid="uid://cf8bl4oon6xhl" path="res://Platzhalter Sprites/Sternen Hintergrund.png" id="2_d5x1h"]
+[ext_resource type="Script" uid="uid://bqrn1aeeodit8" path="res://rotate.gd" id="3_d5x1h"]
+[ext_resource type="SpriteFrames" uid="uid://b788lu43dg1mo" path="res://mondsprites.tres" id="4_8mm7a"]
+[ext_resource type="Script" uid="uid://bpyg4a8gluv23" path="res://moveupanddown.gd" id="5_8mm7a"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_2c62f"]
 material = ExtResource("1_0f027")
@@ -14,6 +17,7 @@ size = Vector3(1, 0.02, 1)
 [node name="Node3D" type="Node3D" unique_id=1246351920]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1023059457]
+transform = Transform3D(1, 0, 0, 0, 0.9785666, 0.20593093, 0, -0.20593093, 0.9785666, 0, -0.07032047, -0.12782133)
 fov = 62.3
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=607691012]
@@ -45,5 +49,21 @@ light_energy = 10.0
 spot_angle = 16.2244
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=710555304]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.30373)
-texture = ExtResource("2_2c62f")
+transform = Transform3D(1.6674832, 0, 0, 0, 1.6356905, 0, 0, 0, 1, 0, 0, -2.8370194)
+texture = ExtResource("2_d5x1h")
+script = ExtResource("3_d5x1h")
+rotation_amount = 0.001
+
+[node name="Sprite3D2" type="AnimatedSprite3D" parent="." unique_id=1520168225]
+transform = Transform3D(0.60466564, 0, 0, 0, 0.55662596, 0, 0, 0, 1, 0, -0.16688097, -1.752547)
+sprite_frames = ExtResource("4_8mm7a")
+frame_progress = 0.3845133
+script = ExtResource("5_8mm7a")
+movementAmount = 0.02
+movementSteps = 3
+
+[node name="Timer" type="Timer" parent="Sprite3D2" unique_id=685369101]
+wait_time = 0.211
+autostart = true
+
+[connection signal="timeout" from="Sprite3D2/Timer" to="Sprite3D2" method="_on_timer_timeout"]
